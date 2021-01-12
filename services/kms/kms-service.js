@@ -12,7 +12,7 @@ class KmsService {
             const { CiphertextBlob } = await this.kmsClient.encrypt(params).promise();
             return CiphertextBlob.toString('base64');
         } catch (e) {
-            console.log('KmsService: ', e);
+            console.log(e.message);
             throw e;
         }
     }
