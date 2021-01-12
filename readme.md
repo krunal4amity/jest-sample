@@ -12,3 +12,9 @@ Mock every dependency your unit test touches.
 - When the execution of a method passes outside of that method, into another object, and back again, you have a dependency.
 - A unit test should test a single codepath through a single method.
 - When you test that code path with the actual dependency, you are not unit testing; you are integration testing. While that's good and necessary, it isn't unit testing.
+
+## To execute the services and unit test
+
+- Please create a KMS key by alias 'alias/sample'
+- Load AWS credentials on your IDE or terminal where Jest tests are to be run
+- AWS Credentials should have sufficient permission to access KMS key.
